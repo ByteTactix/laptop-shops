@@ -21,12 +21,21 @@
 
 .footer-logo {
   width: 15rem;
-  height: 6rem;
-  object-fit: contain;
+  height: 8rem;
+  object-fit: cover;
+  object-position: 0 40%;
 }
 
 .footer-col-1 {
-  flex-basis: 40%; 
+  flex-basis: 40%;
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  img {
+    vertical-align: middle;
+  }
 
   @include mobile {
     flex-basis: none;
@@ -60,10 +69,15 @@
 }
 
 @include mobile {
+
   .footer-col-1,
   .footer-col-2,
   .footer-col-3 {
     width: 100%;
     margin: $s-size 0;
   }
+}
+
+.footer-developed {
+  vertical-align: middle;
 }
